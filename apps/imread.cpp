@@ -18,5 +18,10 @@ int main(int argc, char** argv) {
   auto img = cv::imread(img_path, -1);
   if (img.empty()) return -1;
 
+  cv::namedWindow("imread", cv::WINDOW_NORMAL);
+  cv::imshow("imread", img);
+  cv::waitKey(0);
+  cv::destroyWindow("imread");
+
   return 0;
 }

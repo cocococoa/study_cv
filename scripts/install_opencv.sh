@@ -15,7 +15,7 @@ unzip opencv_contrib.zip
 
 # Option reference: https://docs.opencv.org/4.x/db/d05/tutorial_config_reference.html
 cmake -DWITH_CUDA=OFF -DBUILD_TESTS=OFF \
-    -DIWTH_OPENMP=ON \
+    -DWITH_GTK=ON -DBUILD_opencv_gapi=ON -DIWTH_OPENMP=ON \
     -DOPENCV_EXTRA_MODULES_PATH=$contrib_dir/modules \
     -S $opencv_dir -B $build_dir
 cmake --build $build_dir -- -j
