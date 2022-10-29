@@ -1,4 +1,4 @@
-foreach(exe imread)
+foreach(exe imread blur edge)
   add_executable(${exe} ${exe}.cpp)
   target_include_directories(${exe} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
   target_link_libraries(${exe} PRIVATE cv cxxopts::cxxopts)
