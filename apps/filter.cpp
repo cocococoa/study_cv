@@ -3,6 +3,6 @@
 #include <iostream>
 
 int main() {
-  std::cout << cv::test() << std::endl;
+  std::cout << lcv::test() << std::endl;
   return 0;
 }

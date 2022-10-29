@@ -1,5 +1,5 @@
 #pragma once
 
-namespace cv {
+namespace lcv {
 int test();
-}  // namespace cv
+}  // namespace lcv

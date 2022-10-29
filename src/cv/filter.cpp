@@ -1,8 +1,8 @@
 #include "cv/filter.h"
 
-namespace cv {
+namespace lcv {
 int test() {
   auto x = 100;
   return x;
 }
-}  // namespace cv
+}  // namespace lcv
