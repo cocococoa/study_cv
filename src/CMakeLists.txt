@@ -1,0 +1,6 @@
+find_package(Threads REQUIRED)
+add_library(cv STATIC cv/filter.cpp)
+target_link_libraries(cv PRIVATE Threads::Threads)
+target_include_directories(cv PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_compile_features(cv PUBLIC cxx_std_20)
+target_compile_options(cv PUBLIC -Wall -Wextra)

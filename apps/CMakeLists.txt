@@ -1,0 +1,5 @@
+foreach(exe filter)
+    add_executable(${exe} ${exe}.cpp)
+    target_link_libraries(${exe} PRIVATE cv)
+    target_include_directories(${exe} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+endforeach()
