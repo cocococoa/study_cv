@@ -17,7 +17,7 @@ file_list=(
 files=""
 for file in "${file_list[@]}"; do
     files+=" $base_dir/$file"
-    cmake-format -i -l debug --line-width 120 --tab-size 4 $base_dir/$file
+    cmake-format -i -l debug --line-width 120 --tab-size 2 $base_dir/$file
 done
 
-cmake-lint --line-width 120 --tab-size 4 $files
+cmake-lint --line-width 120 --tab-size 2 $files
