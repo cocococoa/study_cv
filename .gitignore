@@ -2,6 +2,7 @@
 build/
 .vscode/
 .ccls-cache/
+images/
 compile_commands.json
 
 # Prerequisites
